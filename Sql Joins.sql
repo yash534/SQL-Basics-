@@ -6,7 +6,7 @@ CASE
     WHEN Age = 30 Then 'Old'
     ELSE ''Baby
 END
-FROM SQLTutorial.dbo.EmployeeDemograpjics
+FROM SQLPractice.dbo.EmployeeDemograpjics
 WHERE Age is NOT NULL
 ORDER BY Age
 
@@ -17,8 +17,8 @@ CASE
     WHEN jobtitle = 'HR' THEN Salary + (Salary * .15)
     ELSE Salary + (Salary * 0.03)
 END AS SalaryAfterRaise
-FROM SQLTutorial.dbo.EmployeeDemographics
-JOIN SQLTutorial.dbo.EmployeeSalary
+FROM SQLPractice.dbo.EmployeeDemographics
+JOIN SQLPractice.dbo.EmployeeSalary
     ON EmployeeDemographics.EmployeeID = EmployeeSalary.EmployeeID
 
     
