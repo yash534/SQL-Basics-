@@ -1,6 +1,6 @@
 --UPDATE 
 SELECT *
-FROM SQLTutorial.dbo.EmployeeDemographics
+FROM SQLPractice.dbo.EmployeeDemographics
 
 UPDATE SQLTutorial.dbo.EmployeeDemographics
 SET Age = 31, Gender = 'Female'
